@@ -30,3 +30,6 @@ More will be added ASAP. Other features in development incude:
 * Combining prerender() and render() into one simple function call
 * Movement of nodes via Swift
 * More properties
+
+## Disclaimer (as of Saturday, July 23rd, 2016)
+LevelKit is written in Swift 3. Therefore LevelKit cannot be used in Apple App Store apps until Apple begins accepting apps written in the new version (most likely when iOS 10 is released) 
