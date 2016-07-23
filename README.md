@@ -10,11 +10,13 @@ Take a look at this exmaple:
     color: red
     
 Instead of having to create an SCNGeometry instance and applying the color and radius to that and wrapping it in an SCNNode, our code here is simple. To show this in a SceneKit scene, all we'd have to do is:
-  let lvl = LevelKit();
+
+  let lvl = LevelKit()
   lvl.loadFile(name: "Map") // Code above should be in a file called Map.3dlevel
   lvl.setView(scn: yourcurrentscene)
   lvl.prerender()
   lvl.render()
+  
 ## What's supported?
 Right now, the following geometries are supported:
 * cube
