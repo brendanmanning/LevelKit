@@ -19,10 +19,12 @@ Instead of having to create an SCNGeometry instance and applying the color and r
   
 ## What's supported?
 Right now, the following geometries are supported:
+
 * cube
 * sphere
 * tube
 More will be added ASAP. Other features in development incude:
+
 * Multiple scenes (just load the new scene file, prerender(), and render())
 * Combining prerender() and render() into one simple function call
 * Movement of nodes via Swift
