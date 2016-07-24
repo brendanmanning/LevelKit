@@ -14,8 +14,7 @@ Instead of having to create an SCNGeometry instance and apply the color and radi
     let lvl = LevelKit()
     lvl.loadFile(name: "Map") // Code above should be in a file called Map.3dlevel
     lvl.setView(scn: yourcurrentscene)
-    lvl.prerender()
-    lvl.render()
+    lvl.start()
   
 ## What's supported?
 Right now, the following geometries are supported:
