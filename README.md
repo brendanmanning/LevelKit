@@ -22,6 +22,7 @@ Right now, the following geometries are supported:
 * cube
 * sphere
 * tube
+* cylinder
 
 More will be added ASAP. Other features in development incude:
 
