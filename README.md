@@ -27,8 +27,8 @@ Right now, the following geometries are supported:
 More will be added ASAP. Other features in development incude:
 
 * Multiple scenes (just load the new scene file, prerender(), and render())
-* Combining prerender() and render() into one simple function call
-* Movement of nodes via Swift
+* (✓) Combining prerender() and render() into one simple function call
+* (✓) Movement of nodes via Swift
 * More properties
 
 ## Disclaimer (as of Saturday, July 23rd, 2016)
