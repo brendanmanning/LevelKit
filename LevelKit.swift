@@ -34,7 +34,7 @@ class LevelKit {
                 if(line == "") { print("blank") } else {
                     // Split the node by lines
                     print(line)
-                    let properties = line.components(separatedBy: "\n")
+                    var properties = line.components(separatedBy: "\n")
                     print("PROPS ")
                     print(properties)
                     let nodetype = properties[0]
@@ -47,8 +47,6 @@ class LevelKit {
                     /* Apply the properties to the node */
                     var propertyIndex = 0;
                     for prop in properties {
-                        // if(propertyIndex < 1) { return }
-                        // Apply property
                         node = applyProperty(property: prop, node: node)
                         propertyIndex += 1;
                     }
@@ -118,9 +116,15 @@ class LevelKit {
             return SCNBox(width: CGFloat(Double(properties[0])!), height: CGFloat(Double(properties[1])!), length: CGFloat(Double(properties[2])!
                 ), chamferRadius: CGFloat(Double(properties[3])!))
         }
+        if(shape == "cylinder") {
+            if(properties.count != 2) {
+                fatalError("Cylinder takes 2 parameters:\nradius and height");
+            }
+            return SCNCylinder(radius: CGFloat(Double(properties[0])!), height: CGFloat(Double(properties[1])!))
+        }
         if(shape == "sphere") {
             if(properties.count != 1) {
-                fatalError("Cube takes 1 parameter:\nRadius");
+                fatalError("Sphere takes 1 parameter:\nRadius");
             }
             return SCNSphere(radius: CGFloat(Double(properties[0])!))
         }
