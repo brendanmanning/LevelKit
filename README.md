@@ -15,7 +15,10 @@ Instead of having to create an SCNGeometry instance and apply the color and radi
     lvl.loadFile(name: "Map") // Code above should be in a file called Map.3dlevel
     lvl.setView(scn: yourcurrentscene)
     lvl.start()
-  
+
+## Installation
+Copy LevelKit.swift into your Xcode project and you're good to go! Everything is contained in that single file!
+
 ## What's supported?
 Right now, the following geometries are supported:
 
